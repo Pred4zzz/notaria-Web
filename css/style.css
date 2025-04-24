@@ -172,4 +172,24 @@ footer {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Prevenir desplazamiento horizontal */
+body {
+  overflow-x: hidden;
+}
+
+/* Transiciones suaves y efecto hover más dinámico */
+.nav-link, .card {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffbf00;
+  transform: scale(1.05);
+}
+
+/* Mejora de accesibilidad para navegación con teclado */
+.nav-link:focus {
+  outline: 2px solid #ffbf00;
+  outline-offset: 2px;
+}
+
